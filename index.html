@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>인생네컷</title>
+    <div class="absolute-rtan-area">
+        <img src="./image/rtan.png" onclick="showModal()" />
+    </div>
     <link rel="stylesheet" href="./style.css" type="text/css"></style>
-    <script src="./index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
 </head>
 <body>
-    <div class="container">
+    <div id="container">
         <div class="photos">
             <div id="image1" class="photo-frame"
                 onmouseover="hideText(1)"
@@ -45,10 +50,20 @@
                 class="video"
                 ></iframe>
             </div>
+            <div class="footer">
+                <p class="f-title">Happy Lunch Time</p>
+                <p class="f-date">2023.12.25</p>
+            </div>
         </div>
-        <div class="footer">
-            <p class="f-title">Happy Lunch Time</p>
-            <p class="f-date">2023.12.25</p>
+    </div>
+    <div id="modal" class="modal-overlay">
+        <div class="modal-window">
+            <div class="close-area" onclick="closeModal()">𝗫</div>
+            <div class="content">
+            <img src="./image/rtans.png" />
+            <span>인생네컷 완성!</span>
+            <button type="button" onclick="downImg()">이미지 저장하기</button>
+            </div>
         </div>
     </div>
 </body>
