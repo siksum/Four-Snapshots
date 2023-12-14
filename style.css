@@ -11,7 +11,7 @@ body{
     margin: 0;
     display: flex;
     justify-content: center;
-    background-image: url("./background.png");
+    background-image: url("./image/background.png");
 }
 
 .container{
@@ -28,6 +28,8 @@ body{
     background-color: white;
     margin: 15px 20px;
     height: 200px;
+    background-size: cover;
+    position: relative;
 }
 
 .footer{
@@ -46,4 +48,35 @@ body{
     font-size: 15px;
     font-weight: 500;
     color: white;
+}
+
+#image1{
+    background-image: url("./image/img1.png");
+}
+
+#image2{
+    background-image: url("./image/img2.png");
+}
+
+#image3{
+    background-image: url("./image/img3.png");
+}
+
+#image4{
+    background-image: url("./image/img4.png");
+}
+
+.photo_description{
+    color: white;
+    background-color: black;
+    width: fit-content;
+    padding: 0 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    position: absolute;
+    bottom: 0;
+
+    transform: translate(-50%);
+    left: 50%;
 }
